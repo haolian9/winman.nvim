@@ -1,4 +1,4 @@
----@class winjump.G
+---@class winman.G
 ---@field display_panes_font? 'ansi_regular'|'ansi_shadow'|'broadway'|'electronic'|'star_wars'
 
 ---@type winjump.G
