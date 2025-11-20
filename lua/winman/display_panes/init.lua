@@ -68,7 +68,7 @@ do
       rows = vim.go.lines
       rows = rows - vim.go.cmdheight
       if vim.go.laststatus == 3 then rows = rows - 1 end
-      ---todo: may conflict with vim.ui.ext.cmdline
+      ---concern: may conflict with vim.ui.ext.cmdline
     end
 
     local cols = vim.go.columns
