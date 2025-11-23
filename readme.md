@@ -15,7 +15,7 @@ it provides some window management methods
 * winresize
 
 ## prerequisite
-* nvim 0.10.*
+* nvim 0.11.*
 * tui nvim (due to infra.tty)
 * haolian9/infra.nvim
 
