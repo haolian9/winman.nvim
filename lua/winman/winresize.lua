@@ -16,7 +16,7 @@ endfunction
 --]]
 
 local ex = require("infra.ex")
-local itertools = require("infra.itertools")
+local setlib = require("infra.setlib")
 local tty = require("infra.tty")
 
 local resize = {
@@ -34,7 +34,7 @@ local resize = {
 }
 
 --esc,spc,cr
-local terminate = itertools.toset({ 0x1b, 0x20, 0x0d })
+local terminate = setlib.new(0x1b, 0x20, 0x0d)
 
 return function()
   for char, code in tty.read_raw do
