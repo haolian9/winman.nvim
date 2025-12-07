@@ -140,7 +140,7 @@ local bufnr
 return function(callback, exclude_winids)
   if mi.win_is_float(0) then return jelly.warn("refuse to work when a floatwin is being focused") end
 
-  local screenpos = wincursor.screenpos(ni.get_current_win())
+  local screenpos = wincursor.screenpos()
   jelly.debug("screenpos: %s", screenpos)
 
   if not (bufnr ~= nil and ni.buf_is_valid(bufnr)) then
